@@ -1,0 +1,133 @@
+.fixed-form {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: auto;
+  margin: auto;
+  z-index: 1050;
+  border: none;
+  outline: none;
+  /* cursor: pointer; */
+  border-radius: 1%;
+  width: 500px;
+  height: 450px;
+  /* background-color: blue; */
+}
+.fixed-form .container {
+  display: flex;
+  justify-content: center;
+}
+.fixed-form .col {
+  display: flex;
+  justify-content: flex-end;
+}
+.fixed-form .row {
+  align-items: center;
+}
+.image-form {
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 100%;
+}
+.dark-mode {
+  background-color: #1111118c; /* Màu nền tối hơn */
+  color: #eee; /* Màu chữ tương phản */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1040;
+  width: 2000px;
+  height: 2000px;
+}
+/* CSS cho ô input */
+.form-control {
+  transition: border-color 0.3s ease; /* Hiệu ứng chuyển đổi màu border */
+}
+
+/* CSS cho ô input khi hover */
+.form-control:hover {
+  border-color: #007bff; /* Màu border khi hover */
+}
+
+/* CSS cho ô input khi focus */
+.form-control:hover {
+  border-color: #007bff; /* Màu border khi focus */
+  outline: none; /* Loại bỏ viền khi focus */
+  box-shadow: 0 0 5px #007bff; /* Đổ bóng khi focus */
+  cursor: pointer;
+}
+.class-img-rate{
+    width: auto; 
+    max-height: 200px;
+    border-radius: 5%;
+}
+.class-img-avt{
+    width: auto; 
+    max-height: 50px;
+    border-radius: 100%;
+}
+
+.card-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card-banner-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.card-banner-inner-1{
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.banner-image-1 {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Đảm bảo hình ảnh đầy đủ kích thước trong khung */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho hình ảnh */
+}
+.banner-image-2 {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Đảm bảo hình ảnh đầy đủ kích thước trong khung */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho hình ảnh */
+}
+.banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Đảm bảo hình ảnh đầy đủ kích thước trong khung */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho hình ảnh */
+}
+.overflow-container {
+  max-height: 600px; /* Đặt chiều cao cố định */
+  overflow-y: auto; /* Hiển thị thanh cuộn khi nội dung vượt quá chiều cao */
+}
+
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  cursor: pointer;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+}
+.selected {
+  color: gold;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Mini</title>
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+  }
+  .grid-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+
+<!-- <div class="grid-container" id="gridContainer">
+</div> -->
+<a href="public/i.html">yujfghjhgjgh</a>
+<script>
+  // Sample product data
+  const products = [
+    { id: 1, name: "Product 1", image: "https://via.placeholder.com/150" },
+    { id: 2, name: "Product 2", image: "https://via.placeholder.com/150" },
+    { id: 3, name: "Product 3", image: "https://via.placeholder.com/150" },
+    { id: 4, name: "Product 4", image: "https://via.placeholder.com/150" },
+    { id: 5, name: "Product 5", image: "https://via.placeholder.com/150" },
+    { id: 6, name: "Product 6", image: "https://via.placeholder.com/150" },
+    { id: 7, name: "Product 7", image: "https://via.placeholder.com/150" },
+    { id: 8, name: "Product 8", image: "https://via.placeholder.com/150" },
+    { id: 9, name: "Product 9", image: "https://via.placeholder.com/150" },
+    { id: 10, name: "Product 10", image: "https://via.placeholder.com/150" }
+  ];
+
+  // Function to display products in the grid
+  function displayProducts() {
+    const gridContainer = document.getElementById("gridContainer");
+
+    // Clear the grid container
+    gridContainer.innerHTML = "";
+
+    // Loop through products and create grid items
+    products.forEach(product => {
+      const gridItem = document.createElement("div");
+      gridItem.classList.add("grid-item");
+
+      const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+
+      const name = document.createElement("p");
+      name.textContent = product.name;
+
+      gridItem.appendChild(img);
+      gridItem.appendChild(name);
+
+      gridContainer.appendChild(gridItem);
+    });
+  }
+
+  // Call the function to display products
+  displayProducts();
+</script>
+
+</body>
+</html>
